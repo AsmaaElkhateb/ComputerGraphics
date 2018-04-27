@@ -62,18 +62,18 @@ public class Player : MonoBehaviour {
     }
 
     //it is begin called every time our capsule hits something
-  /* private void OnControllerColliderHit(ControllerColliderHit hit)
+   private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.gameObject.tag == "Ground")
+     /*   if (hit.gameObject.tag == "Ground")
         {
             return;
-        }
+        }*/
         //check if we hit an object that is in fornt of us
         if (hit.point.z > transform.position.z + controller.radius)
         {
             Death();
         }
-    }*/
+    }
    private void Death()
     {
         Debug.Log("Dead");
